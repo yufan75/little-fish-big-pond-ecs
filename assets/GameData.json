@@ -1,0 +1,233 @@
+{
+    "window": {
+        "title": "Little Fish, Big Pond",
+        "width": 800,
+        "height": 600
+    },
+    "world": {
+        "x": -400,
+        "y": -400,
+        "width": 800,
+        "height": 600
+    },
+    "game_rules": {
+        "level_thresholds": [2, 2]
+    },
+    "entities": [
+        {
+            "id": "pond_bg",
+            "components": {
+                "position": { "x": -400.0, "y": -300.0 },
+                "size": { "width": 800.0, "height": 600.0 },
+                "color": { "r": 30, "g": 80, "b": 120, "a": 255 },
+                "images": { "names": ["pond_bg.png"], "active_index": 0 }
+             }
+        },
+        {
+            "id": "lilypad_1",
+            "components": {
+                "position": { "x": -280.0, "y": -180.0 },
+                "size": { "width": 50.0, "height": 50.0 },
+                "color": { "r": 20, "g": 100, "b": 30, "a": 255 },
+                "images": { "names":["lilypad.png"], "active_index": 0 }
+            }
+        },
+        {
+            "id": "lilypad_2",
+            "components": {
+                "position": { "x": 150.0, "y": 180.0 },
+                "size": { "width": 45.0, "height": 45.0 },
+                "color": { "r": 25, "g": 110, "b": 35, "a": 255 },
+                "images": { "names":["lilypad.png"], "active_index": 0 }
+            }
+        },
+        {
+            "id": "lilypad_3",
+            "components": {
+                "position": { "x": -100.0, "y": 200.0 },
+                "size": { "width": 55.0, "height": 55.0 },
+                "color": { "r": 15, "g": 95, "b": 25, "a": 255 },
+                "images": { "names":["lilypad.png"], "active_index": 0 }
+            }
+        },
+        {
+            "id": "lilypad_4",
+            "components": {
+                "position": { "x": 250.0, "y": -120.0 },
+                "size": { "width": 48.0, "height": 48.0 },
+                "color": { "r": 30, "g": 105, "b": 40, "a": 255 },
+                "images": { "names":["lilypad.png"], "active_index": 0 }
+            }
+        },
+        {
+            "id": "player_fish",
+            "components": {
+                "position": { "x": 0.0, "y": 0.0 },
+                "size": { "width": 30.0, "height": 15.0 },
+                "color": { "r": 255, "g": 100, "b": 0, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 28.0, "height": 13.0, "layer": 1, "mask": 1 },
+                "player": {},
+                "fish_level": { "level": 1 },
+                "health": { "hp": 5, "damage_cooldown": 0.0 }
+            }
+        },
+        {
+            "id": "lv1_fish_1",
+            "components": {
+                "position": { "x": 200.0, "y": 100.0 },
+                "size": { "width": 20.0, "height": 10.0 },
+                "color": { "r": 0, "g": 200, "b": 100, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 18.0, "height": 8.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 1 }
+            }
+        },
+        {
+            "id": "lv1_fish_2",
+            "components": {
+                "position": { "x": 50.0, "y": -220.0 },
+                "size": { "width": 20.0, "height": 10.0 },
+                "color": { "r": 0, "g": 200, "b": 100, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 18.0, "height": 8.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 1 }
+            }
+        },
+        {
+            "id": "lv1_fish_3",
+            "components": {
+                "position": { "x": -150.0, "y": -150.0 },
+                "size": { "width": 20.0, "height": 10.0 },
+                "color": { "r": 0, "g": 200, "b": 100, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 18.0, "height": 8.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 1 }
+            }
+        },
+        {
+            "id": "lv1_fish_4",
+            "components": {
+                "position": { "x": -200.0, "y": 100.0 },
+                "size": { "width": 20.0, "height": 10.0 },
+                "color": { "r": 0, "g": 200, "b": 100, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 18.0, "height": 8.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 1 }
+            }
+        },
+        {
+            "id": "lv2_fish_1",
+            "components": {
+                "position": { "x": 100.0, "y": -150.0 },
+                "size": { "width": 40.0, "height": 20.0 },
+                "color": { "r": 0, "g": 150, "b": 255, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 28.0, "height": 10.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 2 }
+            }
+        },
+        {
+            "id": "lv2_fish_2",
+            "components": {
+                "position": { "x": 280.0, "y": 120.0 },
+                "size": { "width": 40.0, "height": 20.0 },
+                "color": { "r": 0, "g": 150, "b": 255, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 28.0, "height": 10.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 2 }
+            }
+        },
+        {
+            "id": "lv3_fish_1",
+            "components": {
+                "position": { "x": -180.0, "y": 120.0 },
+                "size": { "width": 60.0, "height": 30.0 },
+                "color": { "r": 255, "g": 60, "b": 60, "a": 255 },
+                "images": { "names": ["fish.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 48.0, "height": 20.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" },
+                "fish_level": { "level": 3 }
+            }
+        },
+        {
+            "id": "dragonfly_1",
+            "components": {
+                "position": { "x": -300.0, "y": 250.0 },
+                "size": { "width": 15.0, "height": 15.0 },
+                "color": { "r": 200, "g": 200, "b": 0, "a": 255 },
+                "images": { "names": ["dragonfly.png"], "active_index": 0 },
+                "velocity": { "dx": 0.0, "dy": 0.0 },
+                "collider": { "width": 13.0, "height": 13.0, "layer": 1, "mask": 1 },
+                "script": { "filename": "scripts/wander.lua" }
+            }
+        }
+    ],
+    "hud_entities": [
+        {
+            "id": "title",
+            "components": {
+                "text": { 
+                    "content": "Little Fish, Big Pond",
+                    "font_name": "default.ttf",
+                    "font_size": 24.0,
+                    "color": { "r": 255, "g": 255, "b": 255, "a": 255 }
+                },
+                "screen_position": { "x": 320.0, "y": 570.0 }
+            }
+        },
+        {
+            "id": "score_display",
+            "components": {
+                "text": { 
+                    "content": "Score: 0",
+                    "blackboard_key": "game.score_text",
+                    "font_name": "default.ttf",
+                    "font_size": 20,
+                    "color": { "r": 255, "g": 255, "b": 255, "a": 255 }
+                },
+                "screen_position": { "x": 10.0, "y": 10.0 }
+            }
+        },
+        {
+            "id": "level_display",
+            "components": {
+                "text": { 
+                    "content": "Level: 1",
+                    "blackboard_key": "game.level_text",
+                    "font_name": "default.ttf",
+                    "font_size": 20,
+                    "color": { "r": 255, "g": 255, "b": 255, "a": 255 }
+                },
+                "screen_position": { "x": 10.0, "y": 40.0 }
+            }
+        },
+        {
+            "id": "health_display",
+            "components": {
+                "text": { 
+                    "content": "Health: 5",
+                    "blackboard_key": "game.health_text",
+                    "font_name": "default.ttf",
+                    "font_size": 20,
+                    "color": { "r": 255, "g": 255, "b": 255, "a": 255 }
+                },
+                "screen_position": { "x": 10.0, "y": 70.0 }
+            }
+        }
+    ]
+}
